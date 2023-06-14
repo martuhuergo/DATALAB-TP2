@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wdth,wght@75..100,400..700&family=Fira+Sans&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
+}
+header h1 {
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    color: yellow;
+    letter-spacing: 5px;
+
+}
+header h4 {
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    color: yellow;
+    letter-spacing: 5px;
+
+}
+header h5 {
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    color: yellow;
+    letter-spacing: 5px;
+
+}
+
+
+nav {
+    color: black;
+    width: 100vw;
+    height: 18.83vh;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 0;
+    top: 19vh;
+    background-color:yellow;
+    width: 100vw;
+    padding: 2vw;
+    min-height: 30vh;
+
+}
+
+nav div {
+
+    display: flex;
+    width: 24.11%;
+
+    justify-content: space-between;
+
+}
+
+
+
+nav,
+header,
+main {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section { 
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+   flex-wrap:wrap;
+   align-content: space-around;
+   /*manejar el espacio entre las filas de elementos con flex*/
+   height: 500vh;
+
+}
+
+main div {
+    width: 45.83%;
+  
+
+}
+
+div img, video {
+
+width: 100%;
+
+}
+
+header {
+    height: 45.30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+
+    font-size: 40px;
+}
+
+h1,
+header h3,
+nav a,
+header a {
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 125%;
+}
+
+nav h1 {
+
+    font-weight: 500;
+
+
+}
+
+header h1 {
+     font-family: 'Fira Sans', sans-serif;
+
+}
+
+header h3 {
+    text-transform: uppercase;
+    color: yellow;
+    letter-spacing: 5px;
+
+}
+
+header p {
+    font-size: 20px;
+}
+
+
+header a,
+nav a {
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer {
+    height: 2cm;
+    background-color: yellow;
+    
+    color: black;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    display: none; /* ocultamos el footer por defecto */
+  }
+
+
+a:hover {
+    color: #ff0000
+}
+
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 40px;
+    height: 30px;
+    background-image: url('path/to/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: logoAnimation 5s linear infinite;
+  }
+  
+  @keyframes logoAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px) scale(1.2);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+
+header a {
+
+    background-color: #212529;
+
+}
+
+nav span {
+    display: none;
+}
+
+/*oculto en la generalidad el menú hamburguesa*/
+
+.icon-menu::before {
+
+    color: white;
+    font-size: 4vw;
+
+
+}
+
+span.icon-menu:hover {
+    cursor: pointer;
+
+
+}
+
+
+.lightboxOverlay { background-color: gray;
+  
+
+}
+
+@media(max-width: 1024px) {
+  
+    nav div {
+        width: 50%;
+    }
+
+    header, section { 
+        margin-bottom: 20px;
+        height: auto;}
+
+}
+
+
+@media (max-width: 768px) {
+
+    nav div {
+        display: none;
+    }
+
+    /*desaparece el grupo de links*/
+
+    nav span {
+        display: inline;
+    }
+
+    section div {
+    width: 100%;
+    margin-bottom: 2vh;
+    
+
+    }
+
+    /*vuelvo a mostrar el menú hamburguesa*/
+
+}
